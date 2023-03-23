@@ -1,13 +1,15 @@
+import AddNew
+import Retrieve
 import ReadWrite
 
 firstResponse = input("Enter or Retrieve? (E or R)")
 match firstResponse[0].upper():
     case "E":
         #add new password
-        ReadWrite.write("New One!", "PASSA SSL ASTP  AS1")
+        AddNew.addNewPassword()
     case "R":
         #Retrieve code
-        print(ReadWrite.read())
+        Retrieve.Retrieve()
     case "Q":
         #quit sequence
         print("Q")
